@@ -70,7 +70,15 @@
        </ul>
     </nav>
     <marquee width="auto" behavior="scroll" bgcolor="#000000" direction="left" align="middle" style="font-size: 2vw; color: white;">
-    我是董羽宸
+    
+     <div id="timeDisplay" style="font-size: auto; color: #f7f5f5;">
+     </div>
+    <script>
+    setInterval(()=>{
+      const now = new Date();
+      document.getElementById("tmeDisplay").innerText="我是董羽宸 現在時間 : "+ now.toLocaleTimeString();
+    }, 1000);
+    </scripe>
 </marquee>  
       <h1 class='title'>董羽宸的網站</h1>
     <hr>
